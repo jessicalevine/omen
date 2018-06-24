@@ -1,0 +1,60 @@
+@import "compass/css3";
+
+/* 
+  MIXIN(S)
+  =================
+ /chriscoyier/pen/FwJux
+
+
+  (TEXT) PARAMS
+  =================
+  1. Namespace
+  2. Intensity
+  3. Text color
+  4. Background color (flat)
+  5. Highlight #1 color
+  6. Highlight #2 color
+  7. Width (px)
+  8. Height (px)
+*/
+
+// Usage
+.example-one {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  @include textGlitch("example-one", 35, white, black, red, blue, 3000, 115);
+}
+
+.example-three {
+  @include imgGlitch("example-three", 15, 100, 100, 200, 75);
+}
+
+/* 
+  (SVG) PARAMS
+  =================
+  @mixin svgGlitch($name, $intensity, $fillColor, $background, $width, $height, $top, $left)
+  =================
+  1. Namespace
+  2. Intensity
+  3. Fill Color
+  4. Background
+  5. Width (px)
+  6. Height (px)
+  5. Top (px, abs pos)
+  6. Left (px, abs pos)
+*/
+
+
+body {
+  background: black;
+  font-family: Courier;
+  padding: 20px;
+}
+.wrap {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
